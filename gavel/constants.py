@@ -18,11 +18,10 @@ Welcome to Gavel.
 
 **Please read this important message carefully before continuing.**
 
-Gavel is a fully automated expo judging system that both tells you where to go
-and collects your votes.
+Gavel is a fully automated expo judging system.
 
 Gavel uses the model of pairwise comparison. You'll start by
-confirming that you have seen a particular project, and then for every submission after that, you'll decide whether it's better or worse than the one you looked **immediately beforehand**.
+confirming that you have seen a particular project presentation, and then for every submission after that, you'll decide whether it's better or worse than the one you looked at **immediately beforehand**.
 
 During the judging process, if you encounter a project which you haven't seen please contact the organizer immediately.
 
@@ -35,7 +34,7 @@ DEFAULT_EMAIL_SUBJECT = 'Hack for Impact Judges Access'
 DEFAULT_EMAIL_BODY = '''
 Hello {name},
 
-This email contains your access link to the Judging System for Hack for Impact event.
+This email contains your access link to the Judging System for the Hack for Impact event.
 
 DO NOT SHARE this email with others.
 
@@ -52,7 +51,7 @@ HackCU| University of Colorado Boulder
 
 DEFAULT_CLOSED_MESSAGE = '''
 The judging system is currently closed. Reload the page to try again.
-'''.strip():
+'''.strip()
 
 DEFAULT_DISABLED_MESSAGE = '''
 Your account is currently disabled. Reload the page to try again.

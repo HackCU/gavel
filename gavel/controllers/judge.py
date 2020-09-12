@@ -106,12 +106,9 @@ def begin():
         annotator = get_current_annotator()
         if annotator.next.id == int(request.form['item_id']):
             annotator.ignore.append(annotator.next)
-            if request.form['action'] == 'Done':
-                annotator.next.viewed.append(annotator)
-                annotator.prev = annotator.next
-                annotator.update_next(choose_next(annotator))
-            elif request.form['action'] == 'Skip':
-                annotator.next = None # will be reset in index
+            annotator.next.viewed.append(annotator)
+            annotator.prev = annotator.next
+            annotator.update_next(choose_next(annotator))
             db.session.commit()
     with_retries(tx)
     return redirect(url_for('index'))

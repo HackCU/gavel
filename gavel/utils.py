@@ -49,7 +49,7 @@ def data_from_csv_string(string):
 
 def get_paragraphs(message):
     paragraphs = re.split(r'\n\n+', message)
-    paragraphs = [i.replace('\n', ' ') for i in paragraphs if i]
+    #paragraphs = [i.replace('\n', ' ') for i in paragraphs if i]
     return paragraphs
 
 @celery.task
