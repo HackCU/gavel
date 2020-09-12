@@ -21,38 +21,38 @@ Welcome to Gavel.
 Gavel is a fully automated expo judging system that both tells you where to go
 and collects your votes.
 
-The system is based on the model of pairwise comparison. You'll start off by
-looking at a single submission, and then for every submission after that,
-you'll decide whether it's better or worse than the one you looked at
-**immediately beforehand**.
+Gavel uses the model of pairwise comparison. You'll start by
+confirming that you have seen a particular project, and then for every submission after that, you'll decide whether it's better or worse than the one you looked **immediately beforehand**.
 
-If at any point, you can't find a particular submission, you can click the
-'Skip' button and you will be assigned a new project. **Please don't skip
-unless absolutely necessary.**
+During the judging process, if you encounter a project which you haven't seen please contact the organizer immediately.
 
-Gavel makes it really simple for you to submit votes, but please think hard
+Gavel makes it simple for you to submit votes, but please think hard
 before you vote. **Once you make a decision, you can't take it back**.
 '''.strip()
 
-DEFAULT_EMAIL_SUBJECT = 'Welcome to Gavel!'
+DEFAULT_EMAIL_SUBJECT = 'Hack for Impact Judges Access'
 
 DEFAULT_EMAIL_BODY = '''
-Hi {name},
+Hello {name},
 
-Welcome to Gavel, the online expo judging system. This email contains your
-magic link to the judging system.
+This email contains your access link to the Judging System for Hack for Impact event.
 
-DO NOT SHARE this email with others, as it contains your personal magic link.
+DO NOT SHARE this email with others.
+
+We are using the Gavel Judging System for this event.
+
+Once you are in, please take the time to read the welcome message and instructions before continuing.
 
 To access the system, visit {link}.
 
-Once you're in, please take the time to read the welcome message and
-instructions before continuing.
+Thanks
+HackCU| University of Colorado Boulder
+
 '''.strip()
 
 DEFAULT_CLOSED_MESSAGE = '''
 The judging system is currently closed. Reload the page to try again.
-'''.strip()
+'''.strip():
 
 DEFAULT_DISABLED_MESSAGE = '''
 Your account is currently disabled. Reload the page to try again.
